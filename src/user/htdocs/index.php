@@ -54,6 +54,7 @@
 		) {
 			$controllerName = $request->getAttachedVar('area');
 		}
+        
 		$controller = new CookieDecorator(new $controllerName);
 		
 		$modelAndView = $controller->handleRequest($request);
